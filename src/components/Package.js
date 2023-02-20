@@ -8,7 +8,7 @@ function PackageUploadFormss() {
     const [description, setDescription] = useState("");
     const [post, setPost] = useState(null);
     const token =
-        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2M2YwNDUyZGE0Y2FjZjEwMWUzMDVmNTQiLCJpYXQiOjE2NzY4NzgwNzQsImV4cCI6MTY3Njg4NTI3NH0.mMqgVTCLrIN5w5QFseGBZMXWob_zt-zeDwKISu6Bs-w";
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2M2YwNDUyZGE0Y2FjZjEwMWUzMDVmNTQiLCJpYXQiOjE2NzY5MDYxMDgsImV4cCI6MTY3NjkxMzMwOH0.7yuMV-i7eo0zNYksYQvuYyBpWhevq3vUcz9uCvsj-SM";
     
     
     
@@ -23,7 +23,7 @@ function PackageUploadFormss() {
         formData.append("price", price);
         formData.append("description", description);
         console.log(formData);
-        fetch("http://localhost:4000/api/service-packages/", {
+        fetch("http://52.221.187.47/api/service-packages/", {
             method: "POST",
             headers: { Authorization: "Bearer " + token },
             body: formData,
