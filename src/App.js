@@ -12,7 +12,7 @@ function App() {
       {/* <PostsPage/> */}
       {/* <ImageUploadForm /> */}
       {/* <ImagesUploadForm /> */}
-      {/* <ImageUploadFormss /> */}
+      <ImageUploadFormss />
       <PackageUploadFormss/>
       
     </div>

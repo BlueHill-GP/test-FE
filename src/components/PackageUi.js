@@ -1,13 +1,13 @@
 
 import React, { useState } from 'react';
 const token =
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2M2YwNDUyZGE0Y2FjZjEwMWUzMDVmNTQiLCJpYXQiOjE2NzY5MDYxMDgsImV4cCI6MTY3NjkxMzMwOH0.7yuMV-i7eo0zNYksYQvuYyBpWhevq3vUcz9uCvsj-SM";
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2M2YwNDUyZGE0Y2FjZjEwMWUzMDVmNTQiLCJpYXQiOjE2NzY5NDY2NDIsImV4cCI6MTY3Njk1Mzg0Mn0.CqAiSA6WiGExxoWeuN6fYp9pYOZltpDdtL_bQfRV86Q";
 
 const PackageUi = ({ post }) => {
 
     const handleSubmitDelete = (event) => {
         event.preventDefault();
-        fetch(`http://52.221.187.47/api/service-packages/${post._id}`, {
+        fetch(`http://13.211.252.242/api/service-packages/${post._id}`, {
             method: 'DELETE',
             headers: { Authorization: "Bearer " + token },
         })

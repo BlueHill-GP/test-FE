@@ -8,7 +8,7 @@ function ImageUploadFormss() {
     const [description, setDescription] = useState("");
     const [post, setPost] = useState(null);
     const token =
-        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2M2YwNDUyZGE0Y2FjZjEwMWUzMDVmNTQiLCJpYXQiOjE2NzY5MDYxMDgsImV4cCI6MTY3NjkxMzMwOH0.7yuMV-i7eo0zNYksYQvuYyBpWhevq3vUcz9uCvsj-SM";
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2M2YwNDUyZGE0Y2FjZjEwMWUzMDVmNTQiLCJpYXQiOjE2NzY5NDY2NDIsImV4cCI6MTY3Njk1Mzg0Mn0.CqAiSA6WiGExxoWeuN6fYp9pYOZltpDdtL_bQfRV86Q";
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -18,7 +18,7 @@ function ImageUploadFormss() {
         }
         formData.append("description", description);
         console.log(formData);
-        fetch("hhttp://52.221.187.47/api/posts/", {
+        fetch("http://13.211.252.242/api/posts/", {
             method: "POST",
             headers: { Authorization: "Bearer " + token },
             body: formData,
